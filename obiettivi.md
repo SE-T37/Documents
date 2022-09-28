@@ -1,6 +1,7 @@
 #UNTITLED_PROJECT
 
 L’obbiettivo di UNTITLED_PROJECT è cercare e condividere viaggi con i propri amici.  
+// Nel pdf 4 si parla della differenza tra scopi e funzioni
 
 Nello specifico il sito avrà i seguenti obbiettivi:
 

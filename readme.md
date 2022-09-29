@@ -1,6 +1,6 @@
 ## ToDo
-- [ ] Aggiungi sezione 'profilo' per il front-end
-- [ ] Aggiungi immagini di mock-up nella cartella ~/mockUps/graphics
+- [x] Aggiungi sezione 'profilo' per il front-end
+- [x] Aggiungi immagini di mock-up nella cartella ~/mockUps/graphics
 - [ ] Aggiungi link a mock-up per il front-end
 - [x] Aggiungi sezione back-end
 - [ ] Chiedi ai professori per Maps API e sicurezza account
@@ -144,7 +144,7 @@ Questa schermata permette agli utenti di comporre il proprio viaggio, selezionan
 Sulla destra della pagina compare una mappa, che mostra l'anteprima delle tappe man mano che vengono inserite e confermate.
 
 ### Profilo
-
+La schermata 'profilo' conterrà sulla sinistra la foto profilo e l'username dell'utente, seguiti da un pulsante dedicato alla modifica delle due. Inoltre, accanto a questa sezione, sarà presente la lista di tutti i post dell'utente
 
 
 # Back-End

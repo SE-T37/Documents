@@ -3,6 +3,7 @@
 - [ ] Aggiungi immagini di mock-up nella cartella ~/mockUps/graphics
 - [ ] Aggiungi link a mock-up per il front-end
 - [ ] Aggiungi sezione back-end
+- [ ] Chiedi ai professori per Maps API e sicurezza account
 
 ## Indice contenuti
 Scopo del Documento

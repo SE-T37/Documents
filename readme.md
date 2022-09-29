@@ -2,7 +2,7 @@
 - [ ] Aggiungi sezione 'profilo' per il front-end
 - [ ] Aggiungi immagini di mock-up nella cartella ~/mockUps/graphics
 - [ ] Aggiungi link a mock-up per il front-end
-- [ ] Aggiungi sezione back-end
+- [x] Aggiungi sezione back-end
 - [ ] Chiedi ai professori per Maps API e sicurezza account
 
 ## Indice contenuti
@@ -86,20 +86,20 @@ Nella presente sezione vengono ridati i requisiti non funzionali (RF) del sito. 
 
 ### RNF 1. Sicurezza registrazione
 La registrazione di un utente (Cfr. RF 2) deve comprendere:
-		RNF 1.1. Uno username alfanumerico unico per un minimo di 4 ed un massimo di 16 caratteri.
-		RNF 1.2. Una password alfanumerica di minimo 6 caratteri ed un massimo di 12 caratteri.
+RNF 1.1. Uno username alfanumerico unico per un minimo di 4 ed un massimo di 16 caratteri.
+RNF 1.2. Una password alfanumerica di minimo 6 caratteri ed un massimo di 12 caratteri.
 
 
 ### RNF 2. Compatibilità
 Il sito deve poter funzionare sui seguenti browser: Chrome, Edge e Safari.
 
 ### RNF 3. Usabilità
-		RNF 3.1. Un utente autenticato che utilizza il sito per la prima volta deve essere capace di pubblicare un viaggio entro 5 minuti.
-		NF 3.2. Un utente non autenticato deve essere capace di cercare un viaggio pertinente entro 5 minuti.
+RNF 3.1. Un utente autenticato che utilizza il sito per la prima volta deve essere capace di pubblicare un viaggio entro 5 minuti.
+RNF 3.2. Un utente non autenticato deve essere capace di cercare un viaggio pertinente entro 5 minuti.
 
 ### RNF 4. Prestazioni
-		RNF 4.1. La ricerca di un viaggio deve essere completata entro 10 secondi.
-		RNF 4.2. La ricerca di una persona deve essere completata entro 5 secondi.
+RNF 4.1. La ricerca di un viaggio deve essere completata entro 10 secondi.
+RNF 4.2. La ricerca di una persona deve essere completata entro 5 secondi.
 
 ### RNF 5. Gestione della privacy
 L’archiviazione ed il trattamento di dati e contenuti degli utenti deve rispettare il regolamento GDPR-2016/679 (https://www.garanteprivacy.it/trattamento-dei-dati).
@@ -111,21 +111,21 @@ La funzione di ricerca utenti (Cfr. RF 5) deve essere effettuata inserendo una s
 La funzione di visualizzazione profili ricercati (Cfr. RF 6) deve essere effettuata mostrando un massimo di 15 utenti, correlati alla ricerca (Cfr. RF 5).
 
 ### RNF 8. Ricerca contenuti
-		RNF 8.1. La funzione di ricerca contenuti (Cfr. RF 9)   deve essere effettuata inserendo una stringa di caratteri per un massimo di 16 caratteri corrispondente al nome del luogo o di una tappa.
-        RNF 8.2. La funzione di ricerca contenuti (Cfr. RF 9)   deve inoltre permettere di selezionare il range di km della lunghezza del viaggio.
+RNF 8.1. La funzione di ricerca contenuti (Cfr. RF 9)   deve essere effettuata inserendo una stringa di caratteri per un massimo di 16 caratteri corrispondente al nome del luogo o di una tappa.
+RNF 8.2. La funzione di ricerca contenuti (Cfr. RF 9)   deve inoltre permettere di selezionare il range di km della lunghezza del viaggio.
 
 
 ### RNF 9. Visualizzazione contenuti
-        RNF 9.1. La  visualizzazione dei contenuti (Cfr. RF 8 e  RF10) deve fornire una mappa del tragitto creata tramite l’API di Google Maps:
-        RNF 9.2. Il contenuto può avere una descrizione contente al massimo 1000 caratteri.
+RNF 9.1. La  visualizzazione dei contenuti (Cfr. RF 8 e  RF10) deve fornire una mappa del tragitto creata tramite l’API di Google Maps:
+RNF 9.2. Il contenuto può avere una descrizione contente al massimo 1000 caratteri.
 
 ### RNF 10. Pubblicazione contenuti
 Il contenuto che descriverà il viaggio (Cfr. RF 11) deve rispettare i seguenti vincoli:
-        RNF 10.1. Deve essere diviso in un minimo di 2 e massimo di 10 tappe.
-        RNF 10.2. Ogni tappa può contenere al massimo una foto.
-        RNF 10.3. La selezione della tappa deve essere gestita dall’API di Google Maps.
-        RNF 10.4. Durante la selezione, verrà mostrata un'anteprima di ciascuna tappa su una mappa, gestita da Google Maps.
-        RNF 10.5. Il contenuto può avere una descrizione contente al massimo 1000 caratteri.
+RNF 10.1. Deve essere diviso in un minimo di 2 e massimo di 10 tappe.
+RNF 10.2. Ogni tappa può contenere al massimo una foto.
+RNF 10.3. La selezione della tappa deve essere gestita dall’API di Google Maps.
+RNF 10.4. Durante la selezione, verrà mostrata un'anteprima di ciascuna tappa su una mappa, gestita da Google Maps.
+RNF 10.5. Il contenuto può avere una descrizione contente al massimo 1000 caratteri.
 *Si veda nota RNF 9.1
 
 
@@ -146,3 +146,27 @@ Questa schermata permette agli utenti di comporre il proprio viaggio, selezionan
 Sulla destra della pagina compare una mappa, che mostra l'anteprima delle tappe man mano che vengono inserite e confermate.
 
 ### Profilo
+
+
+
+# Back-End
+Nel presente capitolo vengono riportati i sistemi esterni con cui il sistema dovrà interfacciarsi per poter funzionare ed una loro descrizione.
+
+Il sistema dovrà interfacciarsi con:
+- Google Maps
+- Database
+
+### Google Maps
+Verranno implementate le API Javascript di Google Maps; le quali serviranno per le seguenti funzionalità del sistema:
+- Selezionare una tappa per un viaggio
+- Visualizzare la mappa di un viaggio, la quale avrà un pin per ogni tappa ed un collegamento tra le varie tappe
+- Calcolare la lunghezza totale del viaggio in km
+
+
+### Database
+Il sistema si interfaccerà con il database per:
+- Memorizzare le credenziali dei vari utenti
+- Memorizzare tutti i viaggi pubblicati con le relative caratteristiche
+
+Il luogo di ciascuna tappa, grazie all’API di Google Maps, verrà salvato nel database in formato json. Il file json verrà inoltre modificato, in modo da contenere il collegamento alla foto che è stata caricata dall’utente nella relativa tappa.
+Ciò consentirà una più facile e veloce creazione della mappa nel momento in cui verrà visualizzato un post.

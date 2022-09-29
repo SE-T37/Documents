@@ -2,14 +2,15 @@
 - [x] Aggiungi sezione 'profilo' per il front-end
 - [x] Aggiungi immagini di mock-up nella cartella ~/mockUps/graphics
 - [ ] Aggiungi link a mock-up per il front-end
+- [ ] Aggiorna documento formattato analisi requisiti (con immagini mock-up)
 - [x] Aggiungi sezione back-end
 - [ ] Chiedi ai professori per Maps API e sicurezza account
 
 ## Indice contenuti
-Scopo del Documento
-Obiettivi del Progetto
-Requisiti Funzionali
-Requisiti Non funzionali
+- Scopo del Documento
+- Obiettivi del Progetto
+- Requisiti Funzionali
+- Requisiti Non funzionali
 
 
 

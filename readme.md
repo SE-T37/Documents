@@ -1,11 +1,3 @@
-## ToDo
-- [x] Aggiungi sezione 'profilo' per il front-end
-- [x] Aggiungi immagini di mock-up nella cartella ~/mockUps/graphics
-- [ ] Aggiungi link a mock-up per il front-end
-- [ ] Aggiorna documento formattato analisi requisiti (con immagini mock-up)
-- [x] Aggiungi sezione back-end
-- [ ] Chiedi ai professori per Maps API e sicurezza account
-
 ## Indice contenuti
 - Scopo del Documento
 - Obiettivi del Progetto
@@ -103,7 +95,7 @@ Il sito deve poter funzionare sui seguenti browser: Chrome, Edge e Safari.
 - RNF 4.2. La ricerca di una persona deve essere completata entro 5 secondi.
 
 ### RNF 5. Gestione della privacy
-L’archiviazione ed il trattamento di dati e contenuti degli utenti deve rispettare il regolamento GDPR-2016/679 (https://www.garanteprivacy.it/trattamento-dei-dati).
+L’archiviazione ed il trattamento di dati e contenuti degli utenti deve rispettare il regolamento [GDPR-2016/679](https://www.garanteprivacy.it/trattamento-dei-dati).
 
 ### RNF 6. Ricerca profili
 La funzione di ricerca utenti (Cfr. RF 5) deve essere effettuata inserendo una stringa di massimo di 16 caratteri corrispondente all’username.

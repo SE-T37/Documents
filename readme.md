@@ -1,1 +1,1 @@
-## Repository contente i focumenti del progetto
+## Repository contente i documenti del progetto

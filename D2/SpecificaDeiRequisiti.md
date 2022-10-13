@@ -7,6 +7,8 @@
 
 ##  <ins> **Use Cases** </ins>
 ## **USE CASE 1**
+![alt text](PubblicazioneContenuti2.png "Activity Diagram del use case")
+
 **Titolo** 
 Pubblicazione contenuti
 

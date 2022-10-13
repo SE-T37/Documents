@@ -6,11 +6,36 @@
 
 
 ##  <ins> **Use Cases** </ins>
-## **1. Pubblicazione contenuti**
+
+## **1. Visualizzazione Profilo**
+![alt text](VisualizzazioneProfilo.png "Use Case Diagram")
+
+**Titolo** 
+Visualizzazione Profilo.
+
+**Riassunto**
+Questo use case descrive come avviene la visualizzazione del profilo di un altro utente.
+
+**Descrizione**
+1.	L’Utente può accedere alla funzione di visualizzazione profilo in diversi modi:
+    1.	Mentre visualizza i viaggi ricercati (cfr….) cliccando sull’username del proprietario;
+    2.	Mentre visualizza i viaggi consigliati (cfr…) cliccando sull’username del proprietario;
+    3.	Mentre visualizza i viaggi dei profili seguiti (cfr…) cliccando sull’username del proprietario;
+    4.	Quando cerca i profili  degli utenti registrati (cfr..) cliccando su uno degli username dei risultati.
+
+
+2.	Una volta che l’utente ha selezionato il bottone per visualizzare il profilo il sito mostra la foto dell’utente selezionato, lo username ed i viaggi pubblicati. [EXTENSION 1].
+
+**Extensions**
+1.	Se il profilo visualizzato è un profilo seguito dall’utente, viene visualizzata anche questa informazione.
+
+
+
+## **2. Pubblicazione contenuti**
 ![alt text](PubblicazioneContenuti2.png "Use Case Diagram")
 
 **Titolo** 
-Pubblicazione contenuti
+Pubblicazione contenuti.
 
 **Riassunto**
 Questo use case descrive come avviene la pubblicazione di un contenuto da parte di un utente registrato.
@@ -21,7 +46,7 @@ Questo use case descrive come avviene la pubblicazione di un contenuto da parte 
 2.	Il sito mostra 4 Sezioni:
     1. Aggiunta titolo;
     2. Aggiunta descrizione generale;
-    3. Selezione tappe;Titolo: Pubblicazione contenuti
+    3. Selezione tappe;
     4. Mappa delle tappe.
 
 3.	L’utente inserisce il nome del titolo del viaggio che sta creando [EXCEPTION 1].
@@ -30,7 +55,6 @@ Questo use case descrive come avviene la pubblicazione di un contenuto da parte 
     1.	Sceglie la posizione (tramite API Google Maps), ciò comporta la creazione di una nuova tappa;
     2.	Aggiunge una foto (opzionale);
     3.	Aggiunge una descrizione (opzionale) [EXCEPTION 3].
-
 
 5.	Terminata la creazione delle tappe l’utente conferma la creazione e pubblicazione del viaggio tramite apposito bottone.
 
@@ -44,7 +68,7 @@ Questo use case descrive come avviene la pubblicazione di un contenuto da parte 
 ![alt text](PubblicazioneContenuti.png "Use case Activity Diagram")
 
 
-## **2. Visualizzazione viaggi profili seguiti**
+## **3. Visualizzazione viaggi profili seguiti**
 ![alt text](VisualizzazioneViaggiSeguiti.png "Use case Diagram")
 
 **Titolo**
@@ -62,7 +86,29 @@ II.	Visualizzare tutti i viaggi di un utente che segue [EXTENSION 2].
 
 Extensions
 1.	La preview comprende:
-    a.	Titolo viaggio
-    b.	Nome utente che l’ha pubblicata
-    c.	Descrizione (se presente) 
+    a.	Titolo viaggio;
+    b.	Nome utente che l’ha pubblicata;
+    c.	Descrizione (se presente).
 2.	Per visualizzare i viaggi di un utente nella parte superiore della pagina “Seguiti” ci sono le foto degli utenti seguiti, cliccandone una si accede alla funzione “Visualizzazione profilo” descritta nello Use case XXXXX.
+
+## **4. Ricerca utenti registrati**
+![alt text](RicercaProfili.png "Use case Diagram")
+
+**Titolo**
+Ricerca utenti registrati.
+
+**Riassunto**
+Questo use case descrive in che modo l’utente registrato può ricercare e visualizzare gli altri utenti registrati. 
+
+**Descrizione**
+1.	L’utente registrato accede alla pagina del sito “Seguiti”.
+2.	Il sito mostra nella pagina una lista con le foto profilo degli utenti che segue ed una foto
+con una “+”.
+3.	L’utente clicca sulla “+”.
+4.	Il sito mostra una tendina con una barra di ricerca.
+5.	L’utente inserisce una stringa per ricercare l’username voluto e clicca sul tasto cerca.
+6.	Il sito cerca e mostra gli username 5 utenti pertinenti [EXTENSION 1].
+7.	L’utente può visualizzare il profilo cliccando sull’username (CFR “Visualizzazione Profilo”).
+
+Extensions
+1.	In caso la ricerca non producesse risultati pertinenti il sito mostra il seguente messaggio di errore: “Nessun risultato”.

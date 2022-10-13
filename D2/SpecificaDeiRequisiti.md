@@ -7,7 +7,7 @@
 
 ##  <ins> **Use Cases** </ins>
 ## **USE CASE 1**
-![alt text](PubblicazioneContenuti2.png "Activity Diagram del use case")
+![alt text](PubblicazioneContenuti2.png "Use Case Diagram")
 
 **Titolo** 
 Pubblicazione contenuti
@@ -41,4 +41,4 @@ Questo use case descrive come avviene la pubblicazione di un contenuto da parte 
 
 
 
-![alt text](PubblicazioneContenuti.png "Activity Diagram del use case")
+![alt text](PubblicazioneContenuti.png "Use case Activity Diagram")

@@ -6,7 +6,7 @@
 
 
 ##  <ins> **Use Cases** </ins>
-## **USE CASE 1**
+## **1. Pubblicazione contenuti**
 ![alt text](PubblicazioneContenuti2.png "Use Case Diagram")
 
 **Titolo** 
@@ -16,7 +16,7 @@ Pubblicazione contenuti
 Questo use case descrive come avviene la pubblicazione di un contenuto da parte di un utente registrato.
 
 **Descrizione**
-1.	L’utente registrato accede alla pagina del sito “Crea”
+1.	L’utente registrato accede alla pagina del sito chiamata “Crea”.
 
 2.	Il sito mostra 4 Sezioni:
     1. Aggiunta titolo;
@@ -42,3 +42,27 @@ Questo use case descrive come avviene la pubblicazione di un contenuto da parte 
 
 
 ![alt text](PubblicazioneContenuti.png "Use case Activity Diagram")
+
+
+## **2. Visualizzazione viaggi profili seguiti**
+![alt text](VisualizzazioneViaggiSeguiti.png "Use case Diagram")
+
+**Titolo**
+Visualizzazione viaggi profili seguiti.
+
+**Riassunto**
+Questo use case descrive in che modo l’utente registrato visualizza i viaggi degli utenti che segue. 
+
+**Descrizione**
+1.	L’utente registrato accede alla pagina del sito “Seguiti”.
+2.	Il sito mostra una preview [EXTENSION 1] dei 10 viaggi più recenti ricercati tra le pubblicazione amici.
+3.	L’utente può ora effettuare 2 azioni:
+I.	Visualizzare per intero uno o più viaggi presentati dal sito estendendo la preview;
+II.	Visualizzare tutti i viaggi di un utente che segue [EXTENSION 2].
+
+Extensions
+1.	La preview comprende:
+    a.	Titolo viaggio
+    b.	Nome utente che l’ha pubblicata
+    c.	Descrizione (se presente) 
+2.	Per visualizzare i viaggi di un utente nella parte superiore della pagina “Seguiti” ci sono le foto degli utenti seguiti, cliccandone una si accede alla funzione “Visualizzazione profilo” descritta nello Use case XXXXX.

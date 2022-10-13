@@ -21,5 +21,6 @@ Matteo p:
 
 Matteo B:
 - Visualizzazione viaggi profili seguiti (Utente  registrato)
-- Registro utenti registrati (Utente  registrato)
+- Rricerca utenti registrati (Utente  registrato)
 - Publicazione contenuti (Utente  registrato)
+- Visualizzazione profilo (Utente registrato)

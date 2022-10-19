@@ -68,6 +68,7 @@ Questo use case descrive come avviene la pubblicazione di un contenuto da parte 
 ![alt text](PubblicazioneContenuti.png "Use case Activity Diagram")
 
 
+
 ## **3. Visualizzazione viaggi profili seguiti**
 ![alt text](VisualizzazioneViaggiSeguiti.png "Use case Diagram")
 
@@ -107,13 +108,13 @@ con una “+”.
 3.	L’utente clicca sulla “+”.
 4.	Il sito mostra una tendina con una barra di ricerca.
 5.	L’utente inserisce una stringa per ricercare l’username voluto e clicca sul tasto cerca.
-6.	Il sito cerca e mostra gli username 5 utenti pertinenti [EXTENSION 1].
+6.	Il sito cerca e mostra gli username 5 utenti pertinenti [EXCEPTION 1].
 7.	L’utente può visualizzare il profilo cliccando sull’username (CFR “Visualizzazione Profilo”).
 
-Extensions
+**Exception**
 1.	In caso la ricerca non producesse risultati pertinenti il sito mostra il seguente messaggio di errore: “Nessun risultato”.
 
-## **5. Gestione Profilo**
+## **5. Gestione Profilo**  //TODO: aggiungere cambio email, eliminazione profilo
 ![alt text](GestioneProfilo.png "Use case Diagram")
 
 **Titolo**
@@ -133,7 +134,7 @@ Questo use case descrive la gestione del profilo di un utente registrato.
 2.	Se la password scelta contiene meno di 6 e/o più di 12 caratteri, verrà chiesto di scegliere una nuova password.
 3.	Se la password inserita non coincide con quella del punto 2, verrà comunicata la non coincidenza delle due password e verrà chiesto di riprovare.
 
-## **6. Registrarsi al sito**
+## **6. Registrarsi al sito**  // TODO: aggiungere requisito email
 ![alt text](RegistrarsiAlSito.png "Use case Diagram")
 
 **Titolo**
@@ -167,3 +168,80 @@ Questo use case descrive l’accesso al sito di un utente anonimo precedentement
 **Exceptions**
 1.	Se lo username inserito non appartiene ad alcun utente, verrà chiesto di riprovare inserendo uno username esistente.
 2.	Se la password inserita non è corretta, verrà chiesto di riprovare inserendo una nuova password.
+
+
+## **8. Creazione tappe viaggio**
+![image not found](CreazioneTappeViaggio.png "Use case Diagram")
+
+**titolo**
+Creazione tappe viaggio.
+
+**Riassunto**
+Questo use case descrive l'interazione con l'API Google Maps di JavaScript per selezionare le tappe del viaggio
+
+**Descrizione**
+1. L'utente inserisce il nome o l'indirizzo del luogo desiderato.
+1. Con l'API Google Maps viene ricercato il luogo in input [EXCEPTION 1].
+1. L'utente seleziona uno tra i possibili risultati.
+1. Con l'API Google Maps vengono esportate le informazioni del luogo in un file JSON.
+
+**Exceptions**
+1. Se la ricerca non produce risultati, l'utente viene allertato
+
+
+## **9. Visualizzazione percorso**
+![image not found](VisualizzazionePercorso.png "Use case Diagram")
+
+**titolo**
+Visualizzazione percorso.
+
+**Riassunto**
+Questo use case descrive l'interazione con l'API Google Maps di JavaScript per visualizzare il percorso del viaggio all'interno di un post
+
+**Descrizione**
+1. Con l'API Google Maps vengono importate le tappe dai file JSON del viaggio.
+1. Con l'API Google Maps viene generata una mappa che mostri il luogo in cui si svolge il viaggio.
+1. Con l'API Google Maps vengono aggiunte una ad una le tappe alla mappa.
+1. Man mano che vengono aggiunte le tappe, vengono disegnate delle linee che le uniscono e che indicano sommariamente l'itinerario
+
+
+## **9. Ricerca viaggi**
+![image not found](RicercaViaggi.png "Use case Diagram")
+
+**titolo**
+Ricerca viaggi.
+
+**Riassunto**
+Questo use case descrive l'interazione con l'API Google Maps di JavaScript per selezionare le tappe del viaggio
+
+**Descrizione**
+1. All'utente viene presentata una barra di ricerca.
+1. L'utente inserisce il titolo del viaggio desiderato o il luogo in cui si svolge.
+1. L'utente seleziona da un menù a tendina la lunghezza del viaggio, da una serie di range di lunghezze predefiniti.
+1. All'utente vengono mostrati i risultati della ricerca [EXCEPTION 1].
+
+**Exception**
+1.	In caso la ricerca non producesse risultati pertinenti il sito mostra il seguente messaggio di errore: “Nessun risultato”.
+
+
+## **8. Visualizzazione viaggi consigliati**
+![image not found](VisualizzazioneViaggiConsigliati.png "Use case Diagram")
+
+**titolo**
+Visualizzazione viaggi consigliati.
+
+**Riassunto**
+Questo use case descrive l'interazione con l'API Google Maps di JavaScript per selezionare le tappe del viaggio
+
+**Descrizione**
+1. L’utente accede alla pagina del sito chiamata "Luoghi".
+1. Il sito mostra una preview [EXTENSION 1] di 10 viaggi selezionati casualmente dal database.
+1. Selezionando uno di questi viene presentato l'intero viaggio nel dettaglio.
+
+
+Extensions
+1.	La preview comprende:
+    a.	Titolo viaggio;
+    b.  Fotografia;
+    c.	Nome utente che l’ha pubblicata;
+    d.	Descrizione (se presente).

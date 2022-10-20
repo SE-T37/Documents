@@ -114,7 +114,7 @@ con una “+”.
 **Exception**
 1.	In caso la ricerca non producesse risultati pertinenti il sito mostra il seguente messaggio di errore: “Nessun risultato”.
 
-## **5. Gestione Profilo**  //TODO: aggiungere cambio email, eliminazione profilo
+## **5. Gestione Profilo**
 ![alt text](GestioneProfilo.png "Use case Diagram")
 
 **Titolo**
@@ -128,13 +128,16 @@ Questo use case descrive la gestione del profilo di un utente registrato.
     1. Inserendo la password attuale [EXCEPTION 1];
     2. Inserendo la nuova password desiderata [EXCEPTION 2];
     3. Inserendo una seconda volta la nuova password, in modo da verificarne la correttezza [EXCEPTION 3].
+2.	L'utente ha la possibilità di cambiare la propria email. Ciò avviene andando a specificare in un apposito campo la nuova email che si desidera utilizzare [EXCEPTION 4].
+3.	L'utente ha la possibilità di eliminare il proprio profilo. Per confermare l'eliminazione verrà chiesto all'utente di inserire la propria password [EXCEPTION 1].
     
 **Exceptions**
 1.	Se la password inserita non corrisponde alla password attuale, verrà chiesto all’utente di riprovare inserendo la password corretta.
 2.	Se la password scelta contiene meno di 6 e/o più di 12 caratteri, verrà chiesto di scegliere una nuova password.
 3.	Se la password inserita non coincide con quella del punto 2, verrà comunicata la non coincidenza delle due password e verrà chiesto di riprovare.
+4.	Se la mail inserita non contiene almeno un carattere '@' ed almeno un carattere '.' tra i caratteri che seguono '@', verrà chiesto di inserire una mail valida.
 
-## **6. Registrarsi al sito**  // TODO: aggiungere requisito email
+## **6. Registrarsi al sito**
 ![alt text](RegistrarsiAlSito.png "Use case Diagram")
 
 **Titolo**
@@ -146,11 +149,13 @@ Questo use case descrive la registrazione al sito da parte di un utente anonimo.
 **Descrizione**
 1.	L’utente sceglie uno username alfanumerico [EXCEPTION 1-2].
 2.	L’utente sceglie una password alfanumerica [EXCEPTION 3].
+3.	L'utente inserisce una propria mail valida [EXCEPTION 4].
     
 **Exceptions**
 1.	Se lo username scelto è già stato usato da un altro utente, verrà chiesto di scegliere uno nuovo username.
 2.	Se lo username scelto contiene meno di 4 e/o più di 16 caratteri, verrà chiesto di scegliere uno nuovo username.
 3.	Se la password scelta contiene meno di 6 e/o più di 12 caratteri, verrà chiesto di scegliere una nuova password.
+4.	Se la mail inserita non contiene almeno un carattere '@' ed almeno un carattere '.' tra i caratteri che seguono '@', verrà chiesto di inserire una mail valida.
 
 ## **7. Accedere al sito**
 ![alt text](AccedereAlSito.png "Use case Diagram")

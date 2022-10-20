@@ -10,7 +10,7 @@
 ##  <ins> **Attore: Utente Non Autenticato** </ins>
 
 ## **1. Registrarsi al sito**
-![image not found](/Images/RegistrarsiSito.png "Use case Diagram")
+![image not found](/Images/RegistrarsiSito.png?raw=true "Use case Diagram")
 
 **Titolo**
 Registrarsi al sito.

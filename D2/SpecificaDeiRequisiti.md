@@ -12,9 +12,10 @@
 
 
 ##  <ins> **Attore: Utente Non Autenticato** </ins>
+![alt text](/Images/UtenteNonAutenticato.png "Use case Diagram")
 
 ## **1. Registrarsi al sito**
-![image not found](/Images/RegistrarsiSito.png?raw=true "Use case Diagram")
+![image not found](/Images/RegistrarsiSito.png "Use case Diagram")
 
 **Titolo**
 Registrarsi al sito.
@@ -105,7 +106,7 @@ Extensions
 
 
 ##  <ins> **Attore: Utente  Autenticato** </ins>
-
+![alt text](/Images/UtenteAutenticato.png "Use case Diagram")
 ## **1. Gestione Profilo**
 ![alt text](/Images/GestioneProfilo.png "Use case Diagram")
 
@@ -301,7 +302,7 @@ Questo use case descrive come avviene la pubblicazione di un contenuto da parte 
 
 
 ##  <ins> **Attore: Google Maps** </ins>
-
+![alt text](/Images/GoogleMaps.png "Use case Diagram")
 ## **1. Creazione tappe viaggio**
 ![image not found](/Images/CreazioneTappeViaggio.png "Use case Diagram")
 
@@ -335,3 +336,69 @@ Questo use case descrive l'interazione con l'API Google Maps di JavaScript per v
 1. Con l'API Google Maps viene generata una mappa che mostri il luogo in cui si svolge il viaggio.
 1. Con l'API Google Maps vengono aggiunte una ad una le tappe alla mappa.
 1. Man mano che vengono aggiunte le tappe, vengono disegnate delle linee che le uniscono e che indicano sommariamente l'itinerario
+
+
+##  <ins> **Attore: Database** </ins>
+![alt text](/Images/Database.png "Use case Diagram")
+## **2. Creazione Dati   **
+![image not found](/Images/CreazioneDati.png "Use case Diagram")
+
+**titolo**
+Creazione Dati
+
+**Riassunto**
+Questo use case descrive quali sono gli elementi da inserire nel database necessari per implementare le funzioni descritte negli altri use case.
+
+**Descrizione**
+1. Quando l'utente non autenticato decide di registrarsi al sito tramite l'apposta funzione (cfr A1.U1) il database deve imagazzinare in modo corretto i dati dell'utente quali username, password, mail e foto profilo.
+2. Quando l'utente autenticato pubblica un contentuto (cfr A2.U6) quest'ultimo dovrà essere immagazzinato nel database includendo nome del viaggio, descrizioni e le tappe.
+
+
+## **2. Aggiornamento Dati   **
+![image not found](/Images/AggiornamentoDati.png "Use case Diagram")
+
+**titolo**
+Aggiornamento Dati
+
+**Riassunto**
+Questo use case descrive quali sono gli elementi da aggiornare nel database a seguiti di azioni dell'utente descritte negli altri use case.
+
+**Descrizione**
+1. Quando l'utente non autenticato decide di modificare il proprio profilo (foto, mail o password) tramite l'apposta funzione (cfr A2.U??) il database deve aggiornare i dati cambiati.[EXTENSION 1]
+
+**Extension**
+1. Il ontrollo dell'integrità di questi dati non viene eseguito in questo use case bensì da quello che implementa la funzione di modifica profilo (cfr A2.U??).
+
+
+## **3. Lettura Dati   **
+![image not found](/Images/LatturaDati.png "Use case Diagram")
+
+**titolo**
+Lettura Dati
+
+**Riassunto**
+Questo use case descrive quali sono i dati da estrarre dal database per permettere all'utente di usufruire delle funzionalità descritte negli use case di cui sopra.
+
+**Descrizione**
+In particolare sarà richiesta la lettura di dati nei seguenti use case:
+1. Visualizzazione viaggi consigliati utente non autenticato. (cfr A1.??).
+2. Ricerca viaggio utente non autenticato. (cfr A1.??).
+3. Accedere al sito.(cfr A1.??).
+5. Ricerca viaggio utente autenticato. (cfr A2.??).
+6. Visualizzazione profilo. (cfr A2.??).
+7. Ricerca utenti registrati. (cfr A2.??).
+8.  Visualizzazione viaggi profili seguiti. (cfr A2.??).
+9.  Visualizzazione viaggi consigliati utente autenticato. (cfr A2.??).
+
+
+## **4. Eliminazione Dati   **
+![image not found](/Images/EliminazioneDati.png "Use case Diagram")
+
+**titolo**
+Eliminazione Dati
+
+**Riassunto**
+Questo use case descrive quali sono i dati da eliminare dal database a seguito di determinate azioni compiute dall'utente e descritte nei precedenti use case.
+
+**Descrizione**
+In particolare sarà richiesta l'eliminazione di dati quando l'utente autenticato decide di cancellare il proprio profilo. (cfr A2.??)

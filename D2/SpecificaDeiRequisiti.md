@@ -7,6 +7,10 @@
 
 ##  <ins> **Use Cases** </ins>
 
+
+
+
+
 ##  <ins> **Attore: Utente Non Autenticato** </ins>
 
 ## **1. Registrarsi al sito**
@@ -53,17 +57,24 @@ Questo use case descrive l’accesso al sito di un utente anonimo precedentement
 Ricerca viaggi.
 
 **Riassunto**
-Questo use case descrive l'interazione con l'API Google Maps di JavaScript per selezionare le tappe del viaggio
+Questo use case descrive la ricerca di specifici viaggi da parte dell'utente non autenticato
 
 **Descrizione**
 1. All'utente viene presentata una barra di ricerca.
 1. L'utente inserisce il titolo del viaggio desiderato o il luogo in cui si svolge.
 1. L'utente seleziona da un menù a tendina la lunghezza del viaggio, da una serie di range di lunghezze predefiniti.
-1. All'utente vengono mostrati i risultati della ricerca [EXCEPTION 1].
+1. All'utente vengono mostrate le preview [EXTENSION 1] dei risultati della ricerca [EXCEPTION 1].
+1. L'utente puà selezionare uno dei risultati per visualizzare il post completo.
 
 **Exception**
 1.	In caso la ricerca non producesse risultati pertinenti il sito mostra il seguente messaggio di errore: “Nessun risultato”.
 
+Extensions
+1.	La preview comprende:
+    a.	Titolo viaggio;
+    b.  Fotografia;
+    c.	Nome utente che l’ha pubblicata;
+    d.	Descrizione (se presente).
 
 ## **2. Visualizzazione viaggi consigliati**
 ![image not found](/Images/VisualizzazioneViaggiConsigliati.png "Use case Diagram")
@@ -72,7 +83,7 @@ Questo use case descrive l'interazione con l'API Google Maps di JavaScript per s
 Visualizzazione viaggi consigliati.
 
 **Riassunto**
-Questo use case descrive l'interazione con l'API Google Maps di JavaScript per selezionare le tappe del viaggio
+Questo use case descrive la presentazione di post consigliati all'utente non autenticato
 
 **Descrizione**
 1. L’utente accede alla pagina del sito chiamata "Luoghi".
@@ -86,6 +97,11 @@ Extensions
     b.  Fotografia;
     c.	Nome utente che l’ha pubblicata;
     d.	Descrizione (se presente).
+
+
+
+
+
 
 
 ##  <ins> **Attore: Utente  Autenticato** </ins>
@@ -113,10 +129,63 @@ Questo use case descrive la gestione del profilo di un utente registrato.
 3.	Se la password inserita non coincide con quella del punto 2, verrà comunicata la non coincidenza delle due password e verrà chiesto di riprovare.
 4.	Se la mail inserita non contiene almeno un carattere '@' ed almeno un carattere '.' tra i caratteri che seguono '@', verrà chiesto di inserire una mail valida.
 
-## **2. Ricerca Viaggio **
-//TODO
-## **3. Visualizzazione Viaggi Consigliati **
-//TODO
+
+## **2. Ricerca viaggio**
+![image not found](/Images/RicercaViaggioAutenticato.png "Use case Diagram")
+
+**titolo**
+Ricerca viaggi.
+
+**Riassunto**
+Questo use case descrive la ricerca di specifici viaggi da parte dell'utente autenticato
+
+**Descrizione**
+1. All'utente viene presentata una barra di ricerca.
+1. L'utente inserisce il titolo del viaggio desiderato o il luogo in cui si svolge.
+1. L'utente seleziona da un menù a tendina la lunghezza del viaggio, da una serie di range di lunghezze predefiniti.
+1. All'utente vengono mostrate le preview [EXTENSION 1] dei risultati della ricerca [EXCEPTION 1].
+1. L'utente puà selezionare uno dei risultati per visualizzare il post completo.
+1. L'utente può decidere di seguire il profilo che ha postato il viaggio [EXTENSION 2]
+
+**Exception**
+1.	In caso la ricerca non producesse risultati pertinenti il sito mostra il seguente messaggio di errore: “Nessun risultato”.
+
+Extensions
+1.	La preview comprende:
+    a.	Titolo viaggio;
+    b.  Fotografia;
+    c.	Nome utente che l’ha pubblicata;
+    d.	Descrizione (se presente).
+2.	L'utente sarà inserito nella lista follower del poster ed inizierà a visualizzare i suoi contenuti nella finestra "seguiti"
+
+
+
+## **3. Visualizzazione viaggi consigliati**
+![image not found](/Images/VisualizzazioneViaggiConsigliatiAutenticato.png "Use case Diagram")
+
+**titolo**
+Visualizzazione viaggi consigliati.
+
+**Riassunto**
+Questo use case descrive la presentazione di post consigliati all'utente autenticato
+
+**Descrizione**
+1. L’utente accede alla pagina del sito chiamata "Luoghi".
+1. Il sito mostra una preview [EXTENSION 1] di 10 viaggi selezionati casualmente dal database.
+1. Selezionando uno di questi viene presentato l'intero viaggio nel dettaglio.
+1. L'utente può decidere di seguire il profilo che ha postato il viaggio [EXTENSION 2]
+
+
+Extensions
+1.	La preview comprende:
+    a.	Titolo viaggio;
+    b.  Fotografia;
+    c.	Nome utente che l’ha pubblicata;
+    d.	Descrizione (se presente).
+2.	L'utente sarà inserito nella lista follower del poster ed inizierà a visualizzare i suoi contenuti nella finestra "seguiti"
+
+
+
 ## **4. Visualizzazione Profilo**
 ![alt text](/Images/VisualizzazioneProfilo.png "Use Case Diagram")
 
@@ -225,6 +294,7 @@ Questo use case descrive come avviene la pubblicazione di un contenuto da parte 
 
 
 ![alt text](/Images/PubblicazioneContenuti.png "Use case Activity Diagram")
+
 
 
 

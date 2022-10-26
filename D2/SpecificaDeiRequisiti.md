@@ -52,7 +52,7 @@ Questo use case descrive l’accesso al sito di un utente anonimo precedentement
 2.	Se la password inserita non è corretta, verrà chiesto di riprovare inserendo una nuova password.
 
 ## **1. Ricerca viaggio**
-![image not found](/Images/RicercaViaggio.png "Use case Diagram")
+![image not found](Images/RicercaViaggio.png "Use case Diagram")
 
 **titolo**
 Ricerca viaggi.

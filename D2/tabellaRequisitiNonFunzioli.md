@@ -4,15 +4,16 @@ RNF1 - SICUREZZA
 --------------------------------------------------------------------------------------
 |           Proprietà         |           Descrizione      |         Misura          |
 |-----------------------------|----------------------------|-------------------------|
-|     Sicurezza password      |   Requisiti di sicurezza   |   Mininmo 6 e massimo   |
-|                             |   della password           |   12 caratteri          | // add costraints for pw
+|     Sicurezza password      |   Requisiti di sicurezza   |  Mininmo 6 caratteri,   | // da aggiungere in d1
+|                             |   della password           |  di cui 1 numero ed     |
+|                             |                            |  un carattere speciale  |
 |-----------------------------|----------------------------|-------------------------|
-|       Sistema email         |                            |                         |  // TODO
-|                             |                            |                         |
+|       Sistema email         | Utilizzo email per conferma|  Invio di 1 mail di     |  
+|                             | cambio password            |  conferma per tentativo |
 --------------------------------------------------------------------------------------
 
 
-RNF2 - COMPATIBILITA'
+RNF2 - COMPATIBILITA' 
 
 --------------------------------------------------------------------------------------
 |           Proprietà         |           Descrizione      |         Misura          |
@@ -79,6 +80,27 @@ RNF6 - LINGUA
 --------------------------------------------------------------------------------------
 
 
-// RNF TODO
-// possibili RNF da aggiungere:
-// SCALABILITA'  -  AFFIDABILITA'
+RNF7 - SCALABILITA' // da aggiungere in d1
+
+--------------------------------------------------------------------------------------
+|           Proprietà         |           Descrizione      |         Misura          |
+|-----------------------------|----------------------------|-------------------------|
+|   Gestione numero utenti    |  Capacità di accomodare un |                         |
+|                             |  numero crescente di utenti|                         |
+|-----------------------------|----------------------------|-------------------------|
+|   Gestione dati utenti      |  Capacità di immagazzinare |                         |
+|                             |  i dati generati da un     |                         |
+|                             |  numero crescente di utenti|                         |
+--------------------------------------------------------------------------------------
+
+
+RNF8 - AFFIDABILITA' // da aggiungere in d1
+
+--------------------------------------------------------------------------------------
+|           Proprietà         |           Descrizione      |         Misura          |
+|-----------------------------|----------------------------|-------------------------|
+|                             |                            |                         |
+|                             |                            |                         |
+|                             |                            |                         |
+--------------------------------------------------------------------------------------
+

@@ -32,4 +32,4 @@ In particolare MongoDB sarà strettamente necessario per i RF 1, 2, 3, 4, 5, 6, 
 Nel diagramma seguente vengono analizzati tutti i flussi di informazione tra il sistema "NomadBees" e le varie entità esterne.
 Tra le entità esterne abbiamo 2 attori ("Utente non autenticato" e "Utenete autenticato") e 2 sistemi subordinati ("Google Maps" e "MongoDB").
 
-![alt text](/Images/DiagrammaDiContesto.png "Diagramma di contesto")
+![Image not found](Images/DiagrammaDiContesto.png "Diagramma di contesto")

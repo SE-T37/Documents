@@ -1,0 +1,6 @@
+-use case gestione profilo e registrazione cambiare max caratteri password
+e tipologia di caratteri
+-rnf2
+-rnf7 
+-rnf8 (vedi access light)
+-D1 invio di mail per conferma tentativo cambio password

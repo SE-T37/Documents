@@ -18,9 +18,9 @@ RNF2 - COMPATIBILITA'
 --------------------------------------------------------------------------------------
 |           Proprietà         |           Descrizione      |         Misura          |
 |-----------------------------|----------------------------|-------------------------|
-|    Compatibilità browser    |  Il sito deve poter essere |  Firefox, Safari e      |
-|                             |  accesso dalla maggior     |  browser basati su      |
-|                             |  parte dei browser moderni |  Chromium               |
+|    Compatibilità browser    |  Il sito deve poter permettere |  Firefox, Safari e      |
+|                             |  l'accesso dalla maggior     |  browser basati su      |
+|                             |  parte dei browser moderni |  Chromium   Conforme            |
 --------------------------------------------------------------------------------------
 
 
@@ -85,11 +85,11 @@ RNF7 - SCALABILITA' // da aggiungere in d1
 --------------------------------------------------------------------------------------
 |           Proprietà         |           Descrizione      |         Misura          |
 |-----------------------------|----------------------------|-------------------------|
-|   Gestione numero utenti    |  Capacità di accomodare un |                         |
+|   Gestione numero utenti    |  Capacità di accomodare un |            500            |
 |                             |  numero crescente di utenti|                         |
 |-----------------------------|----------------------------|-------------------------|
 |   Gestione dati utenti      |  Capacità di immagazzinare |                         |
-|                             |  i dati generati da un     |                         |
+|                             |  i dati generati da un     |           40 gb of data           |
 |                             |  numero crescente di utenti|                         |
 --------------------------------------------------------------------------------------
 

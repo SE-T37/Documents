@@ -7,7 +7,7 @@ Qualora non si fosse registrati al sito bisogna recarsi nella pagina “Registra
 
 Nella pagina “Profilo” è possibile avere una panoramica del proprio profilo e dei propri viaggi pubblicati. In questa pagina, qualora lo si desiderasse, si hanno inoltre le possibilità di modificare il proprio profilo e/o di effettuare il logout.
 
-Nella pagina “Seguiti”
+Nella pagina “Seguiti” è possibile vedere gli utenti che si seguono ed una “preview” dei viaggi pubblicati da essi. Cliccando sull'icona di un utente seguito è possibile visualizzare i viaggi che ha pubblicato. In questa pagina è inoltre possibile seguire un nuovo utente, andando a compilare un apposito form.
 
 La pagina “Crea” è stata sviluppata per permettere all’utente di pubblicare un nuovo viaggio. In questa pagina è infatti possibile compilare un form con i dati del viaggio e delle relative tappe.
 

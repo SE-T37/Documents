@@ -13,8 +13,13 @@ A ciascuna di queste è associato un file .css dallo stesso nome, che ne gestisc
 ## Home
 
 La pagina principale del sito consiste in una semplice lista delle proprie informazioni principali. Essa contiene tuttavia, in alto a destra, i pulsanti di navigazione principali, che permettono all'utente di spostarsi nelle 5 pagine e che rimangono anche nel layout delle rimanenti 4.
-Notare come l'accesso alle pagine 'Seguiti' e 'Crea' sia negato all'utente qualora esso non sia autenticato; in caso un utente del sito che non abbia effettuato l'accesso clicchi su uno dei due pulsanti corrispondenti, esso sarà invece reindirizzato alla pagina 'Profilo', dove sarà presente un form per il login.
+Notare come l'accesso alle pagine 'Seguiti' e 'Crea' sia negato all'utente qualora esso non sia autenticato; in caso un utente del sito che non abbia effettuato l'accesso clicchi su uno dei due pulsanti corrispondenti, esso sarà invece reindirizzato alla pagina 'Profilo', dove sarà presente un form per il login. Nell'ultimo paragrafo nella schermata iniziale è presente un link che ti porta alla pagina profilo.
+Inoltre quando si accede alle diverse pagine è possibile tornare alla schermata Home cliccando sul logo del sito.
 
 ## Luoghi
+La pagina Luoghi presenta inizialmente 6 viaggi casuali estratti dal databese accompagnati da un breve titolo con la relativa foto.
+Utilizzando la barra di ricerca, che rimane perennemente visibile durante lo scorrimento della pagina, è possibile cercare il viaggio desiderato. Inoltre si può filtrare la ricerca per lunghezza del viaggio.
+
+## Seguiti
 
 
